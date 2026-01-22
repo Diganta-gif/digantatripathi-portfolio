@@ -5,14 +5,14 @@
 }
 
 :root {
-    --primary-color: #00d4ff;
-    --secondary-color: #ff006e;
-    --accent-color: #8338ec;
-    --dark-bg: #0a0e27;
-    --darker-bg: #050912;
-    --text-light: #e0e0e0;
-    --text-darker: #a0a0a0;
-    --border-color: rgba(255, 255, 255, 0.1);
+    --primary-color: #6b7280;
+    --secondary-color: #9ca3af;
+    --accent-color: #d1d5db;
+    --dark-bg: #f3f4f6;
+    --darker-bg: #fffbf0;
+    --text-light: #1f2937;
+    --text-darker: #6b7280;
+    --border-color: rgba(0, 0, 0, 0.08);
 }
 
 html {
@@ -32,7 +32,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(10, 14, 39, 0.95);
+    background: rgba(243, 244, 246, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     z-index: 1000;
@@ -250,12 +250,12 @@ body {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: var(--darker-bg);
     border-color: transparent;
-    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(107, 114, 128, 0.2);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.5);
+    box-shadow: 0 15px 40px rgba(107, 114, 128, 0.3);
 }
 
 .btn-secondary {
@@ -289,7 +289,7 @@ body {
     position: absolute;
     width: 120px;
     height: 120px;
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(255, 0, 110, 0.1));
+    background: linear-gradient(135deg, rgba(107, 114, 128, 0.08), rgba(156, 163, 175, 0.08));
     border: 1px solid var(--border-color);
     border-radius: 20px;
     display: flex;
@@ -388,7 +388,7 @@ body {
 /* ============ ABOUT SECTION ============ */
 .about {
     padding: 6rem 2rem;
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(255, 0, 110, 0.05));
+    background: linear-gradient(135deg, rgba(107, 114, 128, 0.05), rgba(156, 163, 175, 0.05));
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
@@ -456,7 +456,7 @@ body {
 }
 
 .stat-item {
-    background: rgba(0, 212, 255, 0.1);
+    background: rgba(107, 114, 128, 0.08);
     border: 1px solid var(--border-color);
     padding: 2rem;
     border-radius: 15px;
@@ -477,7 +477,7 @@ body {
 }
 
 .stat-item:hover {
-    background: rgba(0, 212, 255, 0.2);
+    background: rgba(107, 114, 128, 0.2);
     border-color: var(--primary-color);
     transform: translateY(-10px);
 }
@@ -525,7 +525,7 @@ body {
     object-fit: cover;
     border-radius: 20px;
     border: 3px solid var(--primary-color);
-    box-shadow: 0 20px 60px rgba(0, 212, 255, 0.3);
+    box-shadow: 0 20px 60px rgba(107, 114, 128, 0.2);
     animation: profileFloat 3s ease-in-out infinite;
     transition: all 0.3s ease;
     position: relative;
@@ -538,10 +538,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(255, 0, 110, 0.1));
+    background: linear-gradient(135deg, rgba(107, 114, 128, 0.08), rgba(156, 163, 175, 0.08));
     border: 3px solid var(--primary-color);
     border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 212, 255, 0.3);
+    box-shadow: 0 20px 60px rgba(107, 114, 128, 0.2);
     animation: profileFloat 3s ease-in-out infinite;
     position: relative;
     z-index: 2;
@@ -574,7 +574,7 @@ body {
 }
 
 .profile-image:hover {
-    box-shadow: 0 30px 80px rgba(0, 212, 255, 0.5);
+    box-shadow: 0 30px 80px rgba(107, 114, 128, 0.3);
     transform: scale(1.05) translateY(-10px);
 }
 
@@ -586,7 +586,7 @@ body {
     bottom: -10px;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--accent-color));
     border-radius: 25px;
-    opacity: 0.3;
+    opacity: 0.15;
     filter: blur(20px);
     z-index: 1;
     animation: glowPulse 3s ease-in-out infinite;
@@ -616,7 +616,7 @@ body {
     border-radius: 50%;
     background: conic-gradient(
         var(--primary-color) 0deg calc(var(--percentage) * 3.6deg),
-        rgba(0, 212, 255, 0.1) calc(var(--percentage) * 3.6deg)
+        rgba(107, 114, 128, 0.1) calc(var(--percentage) * 3.6deg)
     );
     display: flex;
     align-items: center;
@@ -660,7 +660,7 @@ body {
 }
 
 .skill-card {
-    background: rgba(0, 212, 255, 0.05);
+    background: rgba(107, 114, 128, 0.05);
     border: 1px solid var(--border-color);
     padding: 2.5rem;
     border-radius: 20px;
@@ -689,10 +689,10 @@ body {
 .skill-card:nth-child(6) { animation-delay: 0.6s; }
 
 .skill-card:hover {
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.15), rgba(255, 0, 110, 0.15));
+    background: linear-gradient(135deg, rgba(107, 114, 128, 0.15), rgba(156, 163, 175, 0.15));
     border-color: var(--primary-color);
     transform: translateY(-15px);
-    box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(107, 114, 128, 0.2);
 }
 
 .skill-icon {
@@ -719,7 +719,7 @@ body {
 }
 
 .tech-stack {
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(255, 0, 110, 0.1));
+    background: linear-gradient(135deg, rgba(107, 114, 128, 0.1), rgba(156, 163, 175, 0.1));
     border: 1px solid var(--border-color);
     padding: 3rem;
     border-radius: 20px;
@@ -740,7 +740,7 @@ body {
 }
 
 .tech-tag {
-    background: rgba(0, 212, 255, 0.1);
+    background: rgba(107, 114, 128, 0.1);
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
     padding: 8px 20px;
@@ -759,7 +759,7 @@ body {
 /* ============ EXPERIENCE SECTION ============ */
 .experience {
     padding: 6rem 2rem;
-    background: linear-gradient(135deg, rgba(255, 0, 110, 0.05), rgba(131, 56, 236, 0.05));
+    background: linear-gradient(135deg, rgba(156, 163, 175, 0.05), rgba(200, 200, 200, 0.05));
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
@@ -814,21 +814,21 @@ body {
     left: calc(50% - 12px);
     transition: all 0.3s ease;
     z-index: 1;
-    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+    box-shadow: 0 0 20px rgba(107, 114, 128, 0.5);
 }
 
 .timeline-item:hover .timeline-marker {
     width: 32px;
     height: 32px;
     top: -4px;
-    box-shadow: 0 0 30px rgba(0, 212, 255, 0.8);
+    box-shadow: 0 0 30px rgba(107, 114, 128, 0.8);
 }
 
 .timeline-content {
     width: calc(50% - 30px);
     margin-left: 0;
     margin-right: auto;
-    background: rgba(0, 212, 255, 0.05);
+    background: rgba(107, 114, 128, 0.05);
     border: 1px solid var(--border-color);
     padding: 2rem;
     border-radius: 15px;
@@ -842,8 +842,8 @@ body {
 
 .timeline-item:hover .timeline-content {
     border-color: var(--primary-color);
-    background: rgba(0, 212, 255, 0.1);
-    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+    background: rgba(107, 114, 128, 0.1);
+    box-shadow: 0 10px 30px rgba(107, 114, 128, 0.2);
 }
 
 .timeline-content h3 {
@@ -897,7 +897,7 @@ body {
 }
 
 .project-card {
-    background: rgba(0, 212, 255, 0.05);
+    background: rgba(107, 114, 128, 0.05);
     border: 1px solid var(--border-color);
     border-radius: 20px;
     overflow: hidden;
@@ -920,13 +920,13 @@ body {
 .project-card:hover {
     border-color: var(--primary-color);
     transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(0, 212, 255, 0.3);
+    box-shadow: 0 20px 50px rgba(107, 114, 128, 0.3);
 }
 
 .project-image {
     width: 100%;
     height: 200px;
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(255, 0, 110, 0.2));
+    background: linear-gradient(135deg, rgba(107, 114, 128, 0.2), rgba(156, 163, 175, 0.2));
     position: relative;
     overflow: hidden;
     display: flex;
@@ -1023,12 +1023,12 @@ body {
 }
 
 .project-tags span {
-    background: rgba(0, 212, 255, 0.1);
+    background: rgba(107, 114, 128, 0.1);
     color: var(--primary-color);
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.8rem;
-    border: 1px solid rgba(0, 212, 255, 0.3);
+    border: 1px solid rgba(107, 114, 128, 0.3);
     transition: all 0.3s ease;
 }
 
@@ -1040,7 +1040,7 @@ body {
 /* ============ EDUCATION SECTION ============ */
 .education {
     padding: 6rem 2rem;
-    background: linear-gradient(135deg, rgba(131, 56, 236, 0.05), rgba(0, 212, 255, 0.05));
+    background: linear-gradient(135deg, rgba(200, 200, 200, 0.05), rgba(107, 114, 128, 0.05));
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
@@ -1053,7 +1053,7 @@ body {
 }
 
 .education-card {
-    background: rgba(0, 212, 255, 0.05);
+    background: rgba(107, 114, 128, 0.05);
     border: 1px solid var(--border-color);
     padding: 2.5rem;
     border-radius: 20px;
@@ -1063,10 +1063,10 @@ body {
 }
 
 .education-card:hover {
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.15), rgba(131, 56, 236, 0.15));
+    background: linear-gradient(135deg, rgba(107, 114, 128, 0.15), rgba(200, 200, 200, 0.15));
     border-color: var(--accent-color);
     transform: translateY(-15px);
-    box-shadow: 0 20px 50px rgba(131, 56, 236, 0.2);
+    box-shadow: 0 20px 50px rgba(200, 200, 200, 0.2);
 }
 
 .education-icon {
@@ -1098,7 +1098,7 @@ body {
 }
 
 .languages-section {
-    background: rgba(0, 212, 255, 0.05);
+    background: rgba(107, 114, 128, 0.05);
     border: 1px solid var(--border-color);
     padding: 3rem;
     border-radius: 20px;
@@ -1131,7 +1131,7 @@ body {
 .proficiency-bar {
     width: 100%;
     height: 10px;
-    background: rgba(0, 212, 255, 0.1);
+    background: rgba(107, 114, 128, 0.1);
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 0.8rem;
@@ -1182,7 +1182,7 @@ body {
 }
 
 .contact-card {
-    background: rgba(0, 212, 255, 0.05);
+    background: rgba(107, 114, 128, 0.05);
     border: 1px solid var(--border-color);
     padding: 2rem;
     border-radius: 15px;
@@ -1196,7 +1196,7 @@ body {
 .contact-card:nth-child(3) { animation-delay: 0.3s; }
 
 .contact-card:hover {
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.15), rgba(255, 0, 110, 0.15));
+    background: linear-gradient(135deg, rgba(107, 114, 128, 0.15), rgba(156, 163, 175, 0.15));
     border-color: var(--primary-color);
     transform: translateY(-10px);
 }
@@ -1236,7 +1236,7 @@ body {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    background: rgba(0, 212, 255, 0.05);
+    background: rgba(107, 114, 128, 0.05);
     border: 1px solid var(--border-color);
     color: var(--text-light);
     padding: 1rem 1.5rem;
@@ -1250,9 +1250,9 @@ body {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    background: rgba(0, 212, 255, 0.1);
+    background: rgba(107, 114, 128, 0.1);
     border-color: var(--primary-color);
-    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+    box-shadow: 0 0 20px rgba(107, 114, 128, 0.3);
 }
 
 .form-group input::placeholder,
@@ -1284,7 +1284,7 @@ body {
 .social-icons a {
     width: 50px;
     height: 50px;
-    background: rgba(0, 212, 255, 0.1);
+    background: rgba(107, 114, 128, 0.1);
     border: 2px solid var(--primary-color);
     border-radius: 50%;
     display: flex;
@@ -1300,7 +1300,7 @@ body {
     background: var(--primary-color);
     color: var(--darker-bg);
     transform: translateY(-10px) rotate(10deg);
-    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.4);
+    box-shadow: 0 10px 30px rgba(107, 114, 128, 0.4);
 }
 
 /* ============ FOOTER ============ */

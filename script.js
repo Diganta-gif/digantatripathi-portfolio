@@ -16,10 +16,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(10, 14, 39, 0.98)';
-        navbar.style.boxShadow = '0 5px 30px rgba(0, 212, 255, 0.1)';
+        navbar.style.background = 'rgba(243, 244, 246, 0.98)';
+        navbar.style.boxShadow = '0 5px 30px rgba(0, 0, 0, 0.08)';
     } else {
-        navbar.style.background = 'rgba(10, 14, 39, 0.95)';
+        navbar.style.background = 'rgba(243, 244, 246, 0.95)';
         navbar.style.boxShadow = 'none';
     }
 });
@@ -80,8 +80,8 @@ if (contactForm) {
         const submitBtn = contactForm.querySelector('button');
         const originalText = submitBtn.textContent;
         submitBtn.textContent = 'Message Sent! ✓';
-        submitBtn.style.background = 'linear-gradient(135deg, #00ff88, #00ffff)';
-        submitBtn.style.color = '#0a0e27';
+        submitBtn.style.background = 'linear-gradient(135deg, #6b7280, #9ca3af)';
+        submitBtn.style.color = '#f3f4f6';
         
         // Reset form
         contactForm.reset();
@@ -222,7 +222,7 @@ function createParticles() {
             }
             
             draw() {
-                ctx.fillStyle = `rgba(0, 212, 255, ${this.opacity})`;
+                ctx.fillStyle = `rgba(107, 114, 128, ${this.opacity})`;
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
                 ctx.fill();
@@ -251,7 +251,7 @@ function createParticles() {
                     const distance = Math.sqrt(dx * dx + dy * dy);
                     
                     if (distance < 100) {
-                        ctx.strokeStyle = `rgba(0, 212, 255, ${0.1 * (1 - distance / 100)})`;
+                        ctx.strokeStyle = `rgba(107, 114, 128, ${0.1 * (1 - distance / 100)})`;
                         ctx.lineWidth = 1;
                         ctx.beginPath();
                         ctx.moveTo(particles[i].x, particles[i].y);
